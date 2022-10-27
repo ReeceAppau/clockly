@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timezone finder</title>
+        <style>
+            @font-face {
+                font-family: Graduate;
+                src: url(Graduate-Regular.ttf);
+            }
+            body {
+                background-color: #0da2ff;
+            }
+            .logo img {
+                max-width: 300px;
+                border-radius: 5px;
+            }
+            .timezones {
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                line-height: 45px;
+                letter-spacing: 4px;
+                text-align: center;
+            }
+            .timezones div span {
+              font-size: 30px;
+              font-family:'Graduate', Courier, monospace;
+              font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo"><img src="logo.jpg" /></div>
+
+        <div class="timezones">
+            <div>GMT <span id="timezone0"></span></div>
+            <div>EST <span id="timezone1"></span></div>
+            <div>BST <span id="timezone2"></span></div>
+            <div>IST <span id="timezone3"></span></div>
+            <div>CST <span id="timezone4"></span></div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
